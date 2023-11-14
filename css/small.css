@@ -1,0 +1,50 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  --black: #0F1A20;
+  --orange: #f42c04;
+  --salmon: #e2856e;
+  --khaki: #ada296;
+  --gray: #88a2aa;
+}
+
+body {
+  color: var(--black);
+  text-align: center;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h1 {
+  background-color: var(--khaki);
+  margin: 0;
+  padding: 1rem;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#cards figure {
+  background-color: var(--gray);
+  margin: 0.5rem 2%;
+  padding: 0.5rem;
+  flex-basis: 96%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #0F1A20;
+}
+#cards h2 {
+  background-color: var(--gray);
+  margin: 0.5rem;
+}
+#cards img {
+  width: 100%;
+}
+#cards figcaption {
+  padding: 2rem;
+  border-radius: 5px;
+}
